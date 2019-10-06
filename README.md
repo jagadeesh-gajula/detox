@@ -1,2 +1,2 @@
 # detox
-detoxifying digital life.
+detoxifying digital life. Cleaning your addictions form inside
