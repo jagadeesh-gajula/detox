@@ -4,22 +4,24 @@ def admin():
     print("this is admin",os.getpid())  
 
 def normal():
-    print("this is normal",os.getpid())
+    path=os.getcwd()+"\sample.exe"
+    os.startfile(path)
+    print(path)
+
+
   
-if __name__ == "__main__": 
-    # creating thread 
-    t1 = threading.Thread(target=admin) 
-    t2 = threading.Thread(target=normal) 
+
+
+t1 = threading.Thread(target=admin) 
+t2 = threading.Thread(target=normal) 
   
-    # starting thread 1 
-    t1.start() 
-    # starting thread 2 
-    t2.start() 
+
+t1.start() 
+
+t2.start() 
   
-    # wait until thread 1 is completely executed 
-    t1.join() 
-    # wait until thread 2 is completely executed 
-    t2.join() 
-  
-    # both threads completely executed 
-    print("Done!") 
+
+t1.join() 
+
+t2.join() 
+print("Done!") 
