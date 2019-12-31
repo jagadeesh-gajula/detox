@@ -1,27 +1,25 @@
-import threading 
-import os 
-def admin():
-    print("this is admin",os.getpid())  
+import psutil 
+import os
+import time
 
-def normal():
-    path=os.getcwd()+"\sample.exe"
-    os.startfile(path)
-    print(path)
+def kill(PROCNAME):
+    for proc in psutil.process_iter():
+        if proc.name == PROCNAME:
+            p = psutil.Process(proc.pid)
+
+            if not 'SYSTEM' in p.username:
+                proc.kill()
 
 
-  
+while True:
+    time.sleep(2)
+    x=[p.name().lower() for p in psutil.process_iter()]
+    if 'cprog.exe' in x:
+        if x.count('cprog.exe') > 1:
+            kill('cprog.exe')
 
+    if x.count('cprog.exe') > 1:
+            kill('cprog.exe')
 
-t1 = threading.Thread(target=admin) 
-t2 = threading.Thread(target=normal) 
-  
-
-t1.start() 
-
-t2.start() 
-  
-
-t1.join() 
-
-t2.join() 
-print("Done!") 
+    else:
+        stream=os.popen('cprog')
