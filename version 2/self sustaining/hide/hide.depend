@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1578150472 source:c:\users\vickyviper\documents\detox\detox\version 2\self sustaining\hide\main.cpp
+	<windows.h>
+	<stdio.h>
+	<tchar.h>
+	<psapi.h>
+

@@ -2,27 +2,21 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="cprog" />
+		<Option title="maintain" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/cprog" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/maintain" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
-					<Add directory="C:/ProgramData/Anaconda3/libs" />
 				</Compiler>
-				<Linker>
-					<Add library="C:/ProgramData/Anaconda3/libs/python3.lib" />
-					<Add library="C:/ProgramData/Anaconda3/libs/python37.lib" />
-					<Add directory="C:/ProgramData/Anaconda3/libs" />
-				</Linker>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/cprog" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Release/maintain" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -39,6 +33,7 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="main.cpp" />
+		<Unit filename="sample.txt" />
 		<Extensions>
 			<code_completion />
 			<envvars />

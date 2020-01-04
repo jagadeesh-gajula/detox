@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1577588641 source:c:\users\vickyviper\documents\detox\detox\version 2\self sustaining\maintain\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<stdlib.h>
+	<stdio.h>
+

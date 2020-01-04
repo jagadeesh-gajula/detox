@@ -2,29 +2,23 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="cprog" />
+		<Option title="hiding" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/cprog" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/hiding" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
-					<Add directory="C:/ProgramData/Anaconda3/libs" />
 				</Compiler>
-				<Linker>
-					<Add library="C:/ProgramData/Anaconda3/libs/python3.lib" />
-					<Add library="C:/ProgramData/Anaconda3/libs/python37.lib" />
-					<Add directory="C:/ProgramData/Anaconda3/libs" />
-				</Linker>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/cprog" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Release/hiding" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
-				<Option type="1" />
+				<Option type="0" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
@@ -36,8 +30,13 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
-			<Add option="-fexceptions" />
 		</Compiler>
+		<Linker>
+			<Add library="gdi32" />
+			<Add library="user32" />
+			<Add library="kernel32" />
+			<Add library="comctl32" />
+		</Linker>
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

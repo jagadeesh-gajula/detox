@@ -1,7 +1,12 @@
 # depslib dependency file v1.0
-1577595586 source:c:\users\vickyviper\documents\detox\detox\version 2\self sustaining\cprog\main.cpp
-	<iostream>
-	<stdlib.h>
+1577594284 source:c:\users\vickyviper\documents\detox\detox\version 2\self sustaining\cprog\main.cpp
 	<stdio.h>
-	<string>
+	<stdlib.h>
+	<iostream>
+	<string.h>
+
+1577585412 source:c:\users\vickyviper\documents\detox\detox\version 2\self sustaining\cprog\hiding.cpp
+	<cstdlib>
+	<iostream>
+	<Windows.h>
 
