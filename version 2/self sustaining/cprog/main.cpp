@@ -56,22 +56,12 @@ char * executeCmd(char * cmd) {
 
 int main( int argc, char *argv[] )
 {
-    Stealth();
+    //Stealth();
     while (1)
     {
 
     char * out = executeCmd("tasklist | find \"python.exe\" ");
-    int info=strlen(out);
-    if (info > 3)
-    {
-        cout<<"python is opened"<<endl;
-    }
-    else
-    {
-        cout<<"python is closed"<<endl;
-        popen("pythonw thanos.py","r");
-
-    }
+    cout<<out<<endl;
     int k;
     cin>>k;
 
